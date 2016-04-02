@@ -6,6 +6,8 @@
     <title>Win32Interop.WinHandles</title>
     <authors>Mackenzie Zastrow</authors>
     <owners>Mackenzie Zastrow</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/zastrowm/Win32Interop.WinHandles</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Provides an abstraction on-top of IntPtr for Win32 windows, and provides methods for interacting with Win32 windows.</description>
     <releaseNotes>Initial release.</releaseNotes>
