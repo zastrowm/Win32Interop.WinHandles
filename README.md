@@ -2,6 +2,10 @@
 
 Provides an abstraction on-top of IntPtr for Win32 windows, and provides methods for interacting with Win32 windows. Inspired by the popularity [this stackoverflow answer](http://stackoverflow.com/a/20276701/548304).
 
+Add it [via nuget](https://www.nuget.org/packages/Win32Interop.WinHandles/)
+
+ > Install-Package Win32Interop.WinHandles
+
 # Quick Setup
 
 ## Finding a single win32 window
@@ -49,3 +53,7 @@ Of course, if you want to construct a `WindowHandle` from an `IntPtr` that you a
 ## Getting the original `IntPtr`
 
 If for some reason you need the original `IntPtr` of a `WindowHandle`, use the `RawPtr` property.
+
+# Contributing
+
+Have a general-purpose method or getter that should be added?  Feel free to make a pull-request or an issue for the desired functionality!  The library is currently pretty thin, but that's only because it only includes the functionality that I (or others) have needed thus far.
