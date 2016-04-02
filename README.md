@@ -19,7 +19,7 @@ If you're looking to find all windows, use `TopLevelWindowUtils.FindWindows`:
 
 ```
 var allNotepadWindows
-   = TopLevelWindowUtils.FindWindow(wh => wh.GetWindowText().Contains("Notepad"));
+   = TopLevelWindowUtils.FindWindows(wh => wh.GetWindowText().Contains("Notepad"));
 ```
 
 # Library Architecture
