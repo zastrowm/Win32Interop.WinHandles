@@ -74,7 +74,7 @@ namespace Win32Interop.WinHandles
       NativeMethods.EnumWindows(delegate(IntPtr wnd, IntPtr param)
                                 {
                                   var window = new WindowHandle(wnd);
-                                  if (!callback.Invoke(window))
+                                  if (callback.Invoke(window))
                                   {
                                     found = window;
                                     return NativeMethods.EnumWindows_StopEnumerating;

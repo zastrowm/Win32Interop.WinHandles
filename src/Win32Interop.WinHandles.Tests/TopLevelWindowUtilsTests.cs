@@ -27,5 +27,14 @@ namespace Win32Interop.WinHandles.Tests
       var windowHandle = TopLevelWindowUtils.GetForegroundWindow();
       Console.WriteLine(windowHandle.GetWindowText());
     }
+
+    [Test]
+    public void FindNotepad()
+    {
+      var window = TopLevelWindowUtils.FindWindow(w => w.GetWindowText().Contains("Notepad"));
+      // TODO we should really just create a window that we control and check against that
+
+      Assert.That(window.GetWindowText(), Contains.Substring("Notepad"));
+    }
   }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using JetBrains.Annotations;
 using Win32Interop.WinHandles.Internal;
 
 namespace Win32Interop.WinHandles
@@ -38,6 +39,7 @@ namespace Win32Interop.WinHandles
     /// <summary> Gets the text associated with the given window handle. </summary>
     /// <param name="windowHandle"> The window handle to act on. </param>
     /// <returns> The window text. </returns>
+    [NotNull]
     public static string GetWindowText(this WindowHandle windowHandle)
     {
       int size = NativeMethods.GetWindowTextLength(windowHandle.RawPtr);
