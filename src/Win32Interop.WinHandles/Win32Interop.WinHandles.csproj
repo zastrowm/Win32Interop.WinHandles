@@ -9,13 +9,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Win32Interop.WinHandles</RootNamespace>
     <AssemblyName>Win32Interop.WinHandles</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <DocumentationFile>..\..\bin\$(Configuration)\$(AssemblyName)\$(AssemblyName).XML</DocumentationFile>
     <OutputPath>..\..\bin\$(Configuration)\$(AssemblyName)</OutputPath>
     <IntermediateOutputPath>..\..\bin\obj\$(Configuration)\$(AssemblyName)</IntermediateOutputPath>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Win32Interop.WinHandles</id>
-    <version>1.0.2</version>
+    <version>2.0.0</version>
     <title>Win32Interop.WinHandles</title>
     <authors>Mackenzie Zastrow</authors>
     <owners>Mackenzie Zastrow</owners>
@@ -10,12 +10,18 @@
     <projectUrl>https://github.com/zastrowm/Win32Interop.WinHandles</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Provides an abstraction on-top of IntPtr for Win32 windows, and provides methods for interacting with Win32 windows.</description>
-    <releaseNotes>Initial release.</releaseNotes>
+    <releaseNotes>
+# 2.0.0
+Target .NET 4.0 instead of 4.5 for wider support.
+
+# 1.0.0
+Initial release.
+    </releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>Win32</tags>
   </metadata>
   <files>
-    <file src="Win32Interop.WinHandles.dll" target="lib\net45\Win32Interop.WinHandles.dll" />
-    <file src="Win32Interop.WinHandles.XML" target="lib\net45\Win32Interop.WinHandles.XML" />
+    <file src="Win32Interop.WinHandles.dll" target="lib\net40\Win32Interop.WinHandles.dll" />
+    <file src="Win32Interop.WinHandles.XML" target="lib\net40\Win32Interop.WinHandles.XML" />
   </files>
 </package>

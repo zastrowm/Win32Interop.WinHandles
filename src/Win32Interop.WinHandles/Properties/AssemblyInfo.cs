@@ -9,7 +9,10 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 
 [assembly: AssemblyTitle("Win32Interop.WinHandles")]
-[assembly: AssemblyDescription("Library for interacting with Win32 window")]
+[assembly:
+  AssemblyDescription(
+    "Provides an abstraction on-top of IntPtr for Win32 windows, and provides methods for interacting with Win32 windows."
+    )]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("WinHandle")]
@@ -38,5 +41,5 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyFileVersion("2.0.0.0")]
