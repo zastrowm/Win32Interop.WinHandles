@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Win32Interop.WinHandles</id>
-    <version>2.0.0</version>
+    <version>3.0.0</version>
     <title>Win32Interop.WinHandles</title>
     <authors>Mackenzie Zastrow</authors>
     <owners>Mackenzie Zastrow</owners>
@@ -11,6 +11,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Provides an abstraction on-top of IntPtr for Win32 windows, and provides methods for interacting with Win32 windows.</description>
     <releaseNotes>
+# 3.0.0
+Provides build targets for .NET standard and .NET core
+
 # 2.0.0
 Target .NET 4.0 instead of 4.5 for wider support.
 
@@ -21,7 +24,11 @@ Initial release.
     <tags>Win32</tags>
   </metadata>
   <files>
-    <file src="Win32Interop.WinHandles.dll" target="lib\net40\Win32Interop.WinHandles.dll" />
-    <file src="Win32Interop.WinHandles.XML" target="lib\net40\Win32Interop.WinHandles.XML" />
+    <file src="bin\Release\net471\Win32Interop.WinHandles.dll" target="lib\net471\Win32Interop.WinHandles.dll" />
+    <file src="bin\Release\net471\Win32Interop.WinHandles.xml" target="lib\net471\Win32Interop.WinHandles.xml" />
+    <file src="bin\Release\netcoreapp2.0\Win32Interop.WinHandles.dll" target="lib\netcoreapp2.0\Win32Interop.WinHandles.dll" />
+    <file src="bin\Release\netcoreapp2.0\Win32Interop.WinHandles.xml" target="lib\netcoreapp2.0\Win32Interop.WinHandles.xml" />
+    <file src="bin\Release\netstandard2.0\Win32Interop.WinHandles.dll" target="lib\netstandard2.0\Win32Interop.WinHandles.dll" />
+    <file src="bin\Release\netstandard2.0\Win32Interop.WinHandles.xml" target="lib\netstandard2.0\Win32Interop.WinHandles.xml" />
   </files>
 </package>
